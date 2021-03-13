@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "target": "es2015",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "types": ["node"],
+    "lib": ["ESNext"]
+  },
+  "include": ["src/**/*"],
+  "exclude": [".builders/**/*", ".mocks/**/*", "**/*.test.ts", "**/*.spec.ts"]
+}

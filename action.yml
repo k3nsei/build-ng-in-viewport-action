@@ -1,0 +1,14 @@
+name: "Build"
+description: "Build ng-in-viewport"
+inputs:
+  version:
+    description: "Version of angular"
+    required: true
+    default: "7"
+  sourceDir:
+    description: "Path to library project"
+    required: true
+    default: "projects/ng-in-viewport"
+runs:
+  using: "node12"
+  main: "dist/index.cjs"

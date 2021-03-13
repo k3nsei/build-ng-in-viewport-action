@@ -1,0 +1,11 @@
+{
+  "name": "ng-in-viewport",
+  "version": "7.0.0",
+  "dependencies": {
+    "tslib": "^1.9.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "^7.0.0",
+    "@angular/core": "^7.0.0"
+  }
+}

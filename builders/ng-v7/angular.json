@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ng-in-viewport": {
+      "root": "projects/ng-in-viewport",
+      "sourceRoot": "projects/ng-in-viewport/src",
+      "projectType": "library",
+      "prefix": "inViewport",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-in-viewport/tsconfig.lib.json",
+            "project": "projects/ng-in-viewport/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-in-viewport/tsconfig.lib.json",
+              "project": "projects/ng-in-viewport/ng-package.json"
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-in-viewport"
+}
